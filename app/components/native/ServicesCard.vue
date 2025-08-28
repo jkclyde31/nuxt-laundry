@@ -32,7 +32,7 @@ defineProps({
       :alt="`${title} Icon`" 
       class="mb-[25px] lg:mb-[40px] max-w-[88px] w-full"
     />
-    <h3 class="mb-[20px] font-semibold text-[30px] -tracking-[0.6%] text-white">
+    <h3 class="mb-[20px] font-semibold text-[30px] -tracking-[0.6%] text-white text-center mx-auto lg:mx-0">
       {{ title }}
     </h3>
     <p 
