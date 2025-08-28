@@ -14,7 +14,7 @@ import { faqs } from '~/lib/constants';
                 <div 
                     v-for="(faq, index) in faqs.slice(0, Math.ceil(faqs.length / 2))" 
                     :key="index" 
-                    class="flex flex-col lg:flex-row items-center gap-[20px]  border border-[#333333] py-[30px] px-[50px]"
+                    class="flex flex-col lg:flex-row items-center gap-[20px]  border border-[#333333] py-[30px] px-[25px] lg:px-[50px]"
                 >
                     <span class="font-semibold text-[28px] p-[20px] bg-gradient-to-r from-[#242424] to-[#242424] rounded-[12px]">
                         {{ faq.number }}
