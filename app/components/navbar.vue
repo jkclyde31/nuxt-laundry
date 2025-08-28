@@ -22,11 +22,11 @@ const closeMobileMenu = () => {
 }
 
 const menuItems = [
-  { name: 'Main', href: '/docs/introduction' },
-  { name: 'Gallery', href: '/docs/introduction' },
-  { name: 'Projects', href: '/docs/introduction' },
-  { name: 'Certifications', href: '/docs/introduction' },
-  { name: 'Contacts', href: '/docs/introduction' }
+  { name: 'Main', href: '/#' },
+  { name: 'Gallery', href: '/#' },
+  { name: 'Projects', href: '/#' },
+  { name: 'Certifications', href: '/#' },
+  { name: 'Contacts', href: '/#' }
 ]
 </script>
 
