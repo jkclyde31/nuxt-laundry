@@ -9,15 +9,15 @@ const [container, slider] = useKeenSlider({
     spacing: 15,
   },
   breakpoints: {
-    '(max-width: 768px)': {
+    '(max-width: 1024)': {
       slides: {
-        perView: 1,
+        perView: 4,
         spacing: 10,
       },
     },
-    '(max-width: 1024px)': {
+    '(max-width: 768)': {
       slides: {
-        perView: 4,
+        perView: 1,
         spacing: 15,
       },
     },
@@ -26,8 +26,8 @@ const [container, slider] = useKeenSlider({
 </script>
 
 <template>
-    <section class="max-w-[1596px] mx-auto w-full pb-[40px]">
-        <h3 class="font-medium text-[18px] text-white text-center border max-w-fit py-[20px] px-[35px] rounded-[100px] bg-[#1A1A1A] border-[#262626] mx-auto mb-[30px]" data-aos="fade-up" data-aos-duration="1000">
+    <section class="max-w-[1596px] mx-auto w-full pb-[40px] z-[9999]">
+        <h3 class="font-medium text-[18px] text-white text-center border max-w-fit py-[20px] px-[35px] rounded-[100px] bg-[#1A1A1A] border-[#262626] mx-auto mb-[30px] z-[9999]" data-aos="fade-up" data-aos-duration="1000">
             Trusted by 250+ Companies
         </h3>
         <div ref="container" class="keen-slider" data-aos="fade-up" data-aos-duration="1300">

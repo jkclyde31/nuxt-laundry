@@ -3,7 +3,7 @@ import CustomButton from './CustomButton.vue';
 </script>
 
 <template>
-    <Section class="max-w-[1596px] mx-auto w-full flex flex-col items-center py-[50px] pb-[100px] md:py-[100px] lg:pt-[112px] lg:pb-[243px] bg-[url('/bg-banner.png')] bg-cover bg-center bg-no-repeat -mb-[31px] relative  "  >
+    <Section class="max-w-[1596px] mx-auto w-full flex flex-col items-center py-[50px] pb-[100px] md:py-[100px] lg:pt-[112px] lg:pb-[243px] bg-[url('/bg-banner.png')] bg-cover bg-center bg-no-repeat -mb-[31px] relative  -z-10 "  >
     <NuxtImg src="/ad.png" class="w-full absolute bottom-0 -z-10"/>
     <h1 class="font-semibold text-[35px] md:text-[45px] lg:text-[68px] text-white max-w-[865px] text-center leading-[120%] mb-[15px] lg:mb-[40px]" >
       A Digital Product Studio that will Work
