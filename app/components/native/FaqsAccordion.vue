@@ -9,7 +9,7 @@ import { faqs } from '~/lib/constants';
 
 <template>
     <Section class="max-w-[1596px] mx-auto w-full" data-aos="fade-up" data-aos-duration="1000">
-        <div class="grid grid-cols-1 lg:grid-cols-2 ">
+        <div class="grid grid-cols-1 md:grid-cols-2 ">
             <Accordion type="single" collapsible>
                 <div 
                     v-for="(faq, index) in faqs.slice(0, Math.ceil(faqs.length / 2))" 
@@ -39,7 +39,7 @@ import { faqs } from '~/lib/constants';
                     <span class="font-semibold text-[28px] p-[20px] bg-gradient-to-r from-[#242424] to-[#242424] rounded-[12px] hidden lg:block">
                         {{ faq.number }}
                     </span>
-                    <AccordionItem :value="`item-${index + Math.ceil(faqs.length / 2) + 1}`" class="max-w-[588px] ">
+                       <AccordionItem :value="`item-${index + 1}`" class="w-full max-w-full" >
                         <AccordionTrigger class="text-[#C5FF66] font-medium text-[18px] md:text-[22px] flex items-center">
                             {{ faq.question }}
                         </AccordionTrigger>        

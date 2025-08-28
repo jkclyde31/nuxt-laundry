@@ -1,6 +1,6 @@
 <template>
   <section 
-    class="max-w-[1596px] mx-auto w-full relative px-[3%] flex flex-col items-center py-[50px] lg:py-[120px]"
+    class="max-w-[1596px] mx-auto w-full relative px-[3%] flex flex-col items-center py-[60px] md:py-[100px] lg:py-[120px]"
     data-aos="fade-up" 
     :data-aos-duration="aosDuration"
   >
@@ -10,7 +10,7 @@
       :style="`background-image: url('${backgroundImage}')`"
     ></div>
     <NuxtImg v-if="hasLogo" src="/logo-big.png" alt="Logo Image" class=" mb-[50px] w-full max-w-[80px]" />
-    <h3 class="font-semibold text-[28px] lg:text-[48px] text-white text-center pb-[14px]">
+    <h3 class="font-semibold text-[28px] md:text-[35px] lg:text-[48px] text-white text-center pb-[14px]">
       {{ title }}
     </h3>
     <p class="text-[18px] leading-[160%] lg:leading-[24px] -tracking-[0.6%] text-[#EDEDED] text-center max-w-[970px] ">

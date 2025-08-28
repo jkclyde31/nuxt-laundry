@@ -30,7 +30,7 @@ import Button from '../ui/button/Button.vue';
 </script>
 
 <template>
-     <div class="p-[25px] lg:py-[100px] lg:px-[80px] border border-[#333333]  w-full text-center lg:text-left">
+     <div class="p-[25px] md:py-[50px] lg:py-[100px] lg:px-[80px] border border-[#333333]  w-full text-center lg:text-left">
 
             <h3 class="font-medium text-[22px] lg:text-[28px] leading-[150%] text-[#D8FF99] mb-[15px] lg:mb-[28px] ">
                 {{title}}

@@ -50,7 +50,7 @@ import { services,  why_choose_us_items, reviews} from '~/lib/constants';
         :aos-duration="1200"
     />
     
-    <Section class="max-w-[1596px] mx-auto w-full grid lg:grid-cols-2" data-aos="fade-up" data-aos-duration="1000">
+    <Section class="max-w-[1596px] mx-auto w-full grid md:grid-cols-2" data-aos="fade-up" data-aos-duration="1000">
         <ChooseUsCard
             v-for="items in why_choose_us_items"
             :title="items.title"
@@ -67,7 +67,7 @@ import { services,  why_choose_us_items, reviews} from '~/lib/constants';
         :aos-duration="1200"
     />
 
-    <Section class="max-w-[1596px] mx-auto w-full grid lg:grid-cols-2" data-aos="fade-up" data-aos-duration="1000">
+    <Section class="max-w-[1596px] mx-auto w-full grid md:grid-cols-2" data-aos="fade-up" data-aos-duration="1000">
         <ReviewCards 
             v-for="review in reviews"
             :title="review.title"

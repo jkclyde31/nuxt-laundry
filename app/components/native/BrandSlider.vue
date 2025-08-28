@@ -17,7 +17,7 @@ const [container, slider] = useKeenSlider({
     },
     '(max-width: 1024px)': {
       slides: {
-        perView: 2,
+        perView: 4,
         spacing: 15,
       },
     },

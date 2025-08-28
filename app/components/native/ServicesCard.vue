@@ -43,7 +43,7 @@ defineProps({
     </p>
     <NuxtLink 
       :to="`/services/${slug}`"
-      class="font-medium text-[18px] bg-[#262626] text-white h-[60px] w-full rounded-[0px] mt-auto hover:bg-[#363636] transition-colors duration-300 flex items-center justify-center text-center no-underline"
+      class="font-medium text-[18px] bg-[#262626] text-white h-[60px] w-full rounded-[0px] mt-auto hover:bg-[#363636] transition-colors duration-300 flex items-center justify-center text-center no-underline max-w-[500px]"
     >
       Learn More
     </NuxtLink>

@@ -17,7 +17,7 @@ import Button from './ui/button/Button.vue';
     <!-- Navigation -->
      <Navbar />
      <!-- Button -->
-    <Button class="hidden md:block text-[18px] bg-[#9EFF00] text-[#262626] rounded-[10px] p-[24px]  cursor-pointer hover:bg-[#9EFF00] font-family-barlow ">Contact Us</Button>
+    <Button class="hidden md:block text-[18px] bg-[#9EFF00] text-[#262626] rounded-[10px]  cursor-pointer hover:bg-[#9EFF00] font-family-barlow h-[60px]">Contact Us</Button>
   </header>
 </template>
 
