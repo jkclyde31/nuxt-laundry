@@ -14,9 +14,9 @@ import { faqs } from '~/lib/constants';
                 <div 
                     v-for="(faq, index) in faqs.slice(0, Math.ceil(faqs.length / 2))" 
                     :key="index" 
-                    class="flex flex-col lg:flex-row items-center gap-[20px]  border border-[#333333] py-[30px] px-[25px] lg:px-[50px]"
+                    class="flex flex-col lg:flex-row items-center gap-[20px]  border border-[#333333] py-[15px] lg:py-[30px] px-[25px] lg:px-[50px] "
                 >
-                    <span class="font-semibold text-[28px] p-[20px] bg-gradient-to-r from-[#242424] to-[#242424] rounded-[12px]">
+                    <span class="font-semibold text-[28px] p-[20px] bg-gradient-to-r from-[#242424] to-[#242424] rounded-[12px] hidden lg:block">
                         {{ faq.number }}
                     </span>
                     <AccordionItem :value="`item-${index + 1}`" class="w-full max-w-full" >
@@ -34,13 +34,13 @@ import { faqs } from '~/lib/constants';
                 <div 
                     v-for="(faq, index) in faqs.slice(Math.ceil(faqs.length / 2))" 
                     :key="index + Math.ceil(faqs.length / 2)" 
-                    class="flex  flex-col lg:flex-row items-center gap-[20px]   border border-[#333333] py-[30px] px-[50px]"
+                    class="flex  flex-col lg:flex-row items-center gap-[20px]   border border-[#333333] py-[15px] lg:py-[30px]  px-[15px] lg:px-[50px] "
                 >
-                    <span class="font-semibold text-[28px] p-[20px] bg-gradient-to-r from-[#242424] to-[#242424] rounded-[12px]">
+                    <span class="font-semibold text-[28px] p-[20px] bg-gradient-to-r from-[#242424] to-[#242424] rounded-[12px] hidden lg:block">
                         {{ faq.number }}
                     </span>
                     <AccordionItem :value="`item-${index + Math.ceil(faqs.length / 2) + 1}`" class="max-w-[588px] ">
-                        <AccordionTrigger class="text-[#C5FF66] font-medium text-[18px] md:text-[22px] lex items-center">
+                        <AccordionTrigger class="text-[#C5FF66] font-medium text-[18px] md:text-[22px] flex items-center">
                             {{ faq.question }}
                         </AccordionTrigger>        
                         <AccordionContent class="text-[#E6E6E6] text-[18px] leading-[150%]">

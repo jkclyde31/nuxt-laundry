@@ -32,14 +32,14 @@ import Button from '../ui/button/Button.vue';
 <template>
      <div class="p-[25px] lg:py-[100px] lg:px-[80px] border border-[#333333]  w-full text-center lg:text-left">
 
-            <h3 class="font-medium text-[26px] lg:text-[28px] leading-[150%] text-[#D8FF99] mb-[15px] lg:mb-[28px] ">
+            <h3 class="font-medium text-[22px] lg:text-[28px] leading-[150%] text-[#D8FF99] mb-[15px] lg:mb-[28px] ">
                 {{title}}
             </h3>
             <p class="text-[#E6E6E6] text-[18px] leading-[150%] mb-[15px] lg:mb-[40px]">
                 {{ description }}
             </p>
             <div class="p-[20px] flex flex-col lg:flex-row gap-[10px] items-center bg-[#1B1B1B]">
-                <div class="flex gap-[18px] justify-center lg:justify-start items-center w-full mb-[25px] lg:mb-0">
+                <div class="flex flex-col md:flex-row gap-[18px] justify-center lg:justify-start items-center w-full mb-[15px] lg:mb-0">
                     <NuxtImg :src="icon"  alt="Johns Profile Pic" class="max-w-[60px] w-full"/>
                     <div>
                         <p>{{ profile_name }}</p>
