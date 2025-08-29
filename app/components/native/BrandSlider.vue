@@ -9,15 +9,15 @@ const [container, slider] = useKeenSlider({
     spacing: 15,
   },
   breakpoints: {
-    '(max-width: 1024)': {
+    '(max-width: 1024px)': {
       slides: {
         perView: 4,
         spacing: 10,
       },
     },
-    '(max-width: 768)': {
+    '(max-width: 768px)': {
       slides: {
-        perView: 1,
+        perView: 2,
         spacing: 15,
       },
     },
