@@ -66,12 +66,12 @@ const menuItems = [
     <Teleport to="body">
       <div 
         v-if="isMobileMenuOpen" 
-        class="mobile-menu-backdrop fixed inset-0 z-[9999] bg-black/50"
+        class="mobile-menu-backdrop fixed inset-0 z-[9999] bg-black/70"
         @click="closeMobileMenu"
       >
         <!-- Mobile Sidebar (80% width, slides from left) -->
         <div 
-          class="mobile-sidebar fixed top-0 left-0 h-full w-[80%] bg-black/95 backdrop-blur-sm border-r border-white/10 transform transition-transform duration-300 ease-in-out"
+          class="mobile-sidebar fixed top-0 left-0 h-full w-[80%] bg-[#0C0C0C] backdrop-blur-sm border-r border-white/10 transform transition-transform duration-300 ease-in-out"
           :class="isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'"
           @click.stop
         >
