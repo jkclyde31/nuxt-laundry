@@ -67,14 +67,9 @@ import { services,  why_choose_us_items, reviews} from '~/lib/constants';
         :aos-duration="1200"
     />
 
-    <Section class="max-w-[1596px] mx-auto w-full grid md:grid-cols-2" data-aos="fade-up" data-aos-duration="1000">
+    <Section class="max-w-[1596px] mx-auto w-full">
         <ReviewCards 
-            v-for="review in reviews"
-            :title="review.title"
-            :description="review.description"
-            :icon="review.icon"
-            :profile_name="review.profile_name"
-            :profile_position="review.profile_position"
+         
         />
     </Section>  
 
