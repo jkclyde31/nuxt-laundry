@@ -30,7 +30,7 @@ const [container, slider] = useKeenSlider({
 
 <template>
     <!-- Desktop: CSS Grid -->
-    <div class="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+    <div class="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
         <div v-for="review in reviews" :key="review.id || review.profile_name">
             <div class="p-[25px] md:py-[60px] lg:py-[100px] lg:px-[80px] border border-[#333333] w-full text-center lg:text-left h-full">
                 <h3 class="font-medium text-[22px] lg:text-[28px] leading-[150%] text-[#D8FF99] mb-[15px] lg:mb-[28px]">
@@ -58,9 +58,9 @@ const [container, slider] = useKeenSlider({
     </div>
 
     <!-- Mobile/Tablet: Keen Slider -->
-    <div ref="container" class="keen-slider block lg:hidden">
+    <div ref="container" class="keen-slider ">
         <div v-for="review in reviews" :key="review.id || review.profile_name" class="keen-slider__slide">
-            <div class="pb-[0px] p-[25px] md:py-[60px] lg:py-[100px] lg:px-[80px] border border-[#333333] w-full text-center lg:text-left h-full">
+            <div class="pb-[0px] p-[25px] md:py-[60px] lg:py-[100px] lg:px-[80px] border border-[#333333] w-full text-center lg:text-left h-full block md:hidden">
                 <h3 class="font-medium text-[22px] lg:text-[28px] leading-[150%] text-[#D8FF99] mb-[15px] lg:mb-[28px]">
                     {{ review.title }}
                 </h3>
