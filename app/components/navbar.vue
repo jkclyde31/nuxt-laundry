@@ -22,17 +22,16 @@ const closeMobileMenu = () => {
 }
 
 const menuItems = [
-  { name: 'Main', href: '/#' },
-  { name: 'Gallery', href: '/#' },
-  { name: 'Projects', href: '/#' },
-  { name: 'Certifications', href: '/#' },
-  { name: 'Contacts', href: '/#' }
+  { name: 'Home', href: '/#' },
+  { name: 'Services', href: '/#' },
+  { name: 'Laundry', href: '/#' },
+ 
 ]
 </script>
 
 <template>
   <!-- Desktop Navigation -->
-  <NavigationMenu class="hidden md:block w-full max-w-[622px] menu-container">
+  <NavigationMenu class="hidden md:block w-full max-w-[350px] menu-container">
     <NavigationMenuList class="flex justify-between items-center w-[100%] here">
       <NavigationMenuItem v-for="item in menuItems" :key="item.name">
         <NavigationMenuLink
@@ -44,6 +43,8 @@ const menuItems = [
         </NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenuList>
+          <Button class="rounded-[20px] bg-black cursor-pointer">SIGN IN</Button>
+
   </NavigationMenu>
 
   <!-- Mobile Navigation -->
@@ -111,8 +112,28 @@ const menuItems = [
 </template>
 
 <style scoped>
+nav{
+  background-color: white;
+  border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap:15px
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  gap: 15px;
+}
+
+
 .reset-padding {
-  padding: 20px !important;
+  padding: 8px !important;
 }
 
 .menu-container div {
@@ -120,9 +141,9 @@ const menuItems = [
 }
 
 .menu-link {
-  font-size: 18px;
-  font-weight: medium !important;
-  color: var(--navlinks);
+  font-size: 12px;
+  color: black !important;
+  text-transform: uppercase;
 }
 
 .bg-background {
@@ -134,7 +155,7 @@ const menuItems = [
 }
 
 .menu-link:hover {
-  color: #9EFF00;
+  color: black;
 }
 
 /* Mobile Menu Button Styles */
