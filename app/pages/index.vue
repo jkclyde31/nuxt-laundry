@@ -1,6 +1,6 @@
 <template>
   <!-- Hero Section -->
-  <div class="h-screen border border-amber-400 overflow-hidden px-[3%]">
+  <div class="h-screen border overflow-hidden px-[3%]">
     <Header title="Nuxt App" />
 
     <div
@@ -20,13 +20,11 @@
           <span class="text-[#4a4a4a] lg:block inline lg:pl-[20px]">SERVICES</span>
         </h1>
 
-        <!-- Bottom Text - Order 1 on SM, Order 2 on LG -->
         <div class="flex flex-col sm:flex-row justify-around lg:justify-between items-center lg:pl-[20px] pt-[25px] sm:pt-[50px] lg:pt-[192px] gap-[20px] order-1 sm:order-1 lg:order-2">
             <p class="font-extralight text-[14px] max-w-[100%] sm:max-w-[222px] text-center sm:text-start">Premium wash, dry and fold services with free pick up & delivery.</p>
             <p class="font-extralight text-[14px] max-w-[222px] text-center sm:text-start">Free Same-Day Pickup <br> Eco-Friendly Detergents</p>
         </div>
 
-        <!-- Buttons - Order 2 on SM, Order 1 on LG -->
         <div class="flex flex-col sm:flex-row justify-center lg:justify-start items-center mt-[20px] gap-[20px] lg:pl-[20px] order-2 sm:order-2 lg:order-1">
             <Button class="bg-transparent text-[16px] font-normal border-[2px] border-black rounded-[25px] h-[46px] w-[100%] sm:w-[160px] hover:text-white text-black cursor-pointer">VIEW PROJECTS</Button>
             <Button class="bg-[#5BC0FF] text-[16px] font-normal  h-[46px] w-[100%] sm:w-[160px] rounded-[25px] text-white cursor-pointer">BOOK NOW</Button>
