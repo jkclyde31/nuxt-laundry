@@ -31,21 +31,26 @@ const menuItems = [
 
 <template>
   <!-- Desktop Navigation -->
-  <NavigationMenu class="hidden md:block w-full max-w-[350px] menu-container">
-    <NavigationMenuList class="flex justify-between items-center w-[100%] here">
-      <NavigationMenuItem v-for="item in menuItems" :key="item.name">
-        <NavigationMenuLink
-          :href="item.href"
-          :class="[navigationMenuTriggerStyle(), 'reset-padding']"
-          class="menu-link"
-        >
-          {{ item.name }}
-        </NavigationMenuLink>
-      </NavigationMenuItem>
-    </NavigationMenuList>
-          <Button class="rounded-[20px] bg-black cursor-pointer">SIGN IN</Button>
+  <NavigationMenu
+  class="hidden md:flex w-full max-w-[350px] bg-white rounded-[20px] justify-end items-center gap-[15px]"
+>
+  <NavigationMenuList class="flex justify-between items-center w-full">
+    <NavigationMenuItem v-for="item in menuItems" :key="item.name">
+      <NavigationMenuLink
+        :href="item.href"
+        :class="[navigationMenuTriggerStyle()]"
+        class="px-2 py-2 text-[12px] uppercase text-black hover:text-black"
+      >
+        {{ item.name }}
+      </NavigationMenuLink>
+    </NavigationMenuItem>
+  </NavigationMenuList>
 
-  </NavigationMenu>
+  <Button class="rounded-[20px] bg-black text-white cursor-pointer">
+    SIGN IN
+  </Button>
+</NavigationMenu>
+
 
   <!-- Mobile Navigation -->
   <div class="md:hidden">
@@ -111,162 +116,3 @@ const menuItems = [
   </div>
 </template>
 
-<style scoped>
-nav{
-  background-color: white;
-  border-radius: 20px;
-}
-
-nav {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap:15px
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between !important;
-  align-items: center;
-  gap: 15px;
-}
-
-
-.reset-padding {
-  padding: 8px !important;
-}
-
-.menu-container div {
-  width: 100% !important;
-}
-
-.menu-link {
-  font-size: 12px;
-  color: black !important;
-  text-transform: uppercase;
-}
-
-.bg-background {
-  background-color: unset;
-}
-
-.menu-link {
-  color: white;
-}
-
-.menu-link:hover {
-  color: black;
-}
-
-/* Mobile Menu Button Styles */
-.mobile-menu-btn {
-  background: transparent !important;
-  border: none !important;
-  color: white !important;
-  padding: 8px !important;
-}
-
-.mobile-menu-btn:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-}
-
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 24px;
-  height: 18px;
-}
-
-.hamburger span {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-color: white;
-  transition: all 0.3s ease;
-  transform-origin: center;
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* Mobile Menu Backdrop */
-.mobile-menu-backdrop {
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Mobile Sidebar */
-.mobile-sidebar {
-  animation: slideIn 0.3s ease-out;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-/* Mobile Menu Links */
-.mobile-menu-link {
-  font-size: 1.125rem !important;
-  font-weight: 500 !important;
-  color: white !important;
-  text-decoration: none !important;
-  position: relative;
-  background: transparent !important;
-  border-radius: 8px !important;
-  transition: all 0.3s ease;
-  display: flex !important;
-  align-items: start !important;
-}
-
-.mobile-menu-link:hover {
-  color: #9EFF00 !important;
-  background: rgba(158, 255, 0, 0.1) !important;
-}
-
-.mobile-menu-link::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 100%;
-  background: linear-gradient(90deg, #9EFF00, transparent);
-  border-radius: 8px 0 0 8px;
-  transition: all 0.3s ease;
-  opacity: 0;
-}
-
-.mobile-menu-link:hover::before {
-  width: 4px;
-  opacity: 1;
-}
-
-/* Navigation Menu List Override for Mobile */
-.mobile-sidebar .bg-background {
-  background-color: transparent !important;
-}
-</style>
