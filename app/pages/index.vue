@@ -4,7 +4,7 @@
     <Header title="Nuxt App" />
 
     <div
-      class="flex flex-col lg:flex-row max-w-[1200px] w-full justify-between items-center mx-auto text-left px-4 lg:px-0 h-full gap-[15px]"
+      class="flex flex-col lg:flex-row max-w-[1200px] w-full justify-between items-center mx-auto text-left px-4 lg:px-0 h-full gap-[15px] mt-[50px] lg:mt-0"
     >
       <!-- Left: Text -->
       <div class="max-w-full lg:max-w-[600px] w-full flex flex-col justify-center h-full">
